@@ -23,6 +23,10 @@ OS name: "linux", version: "7.0.0-38-generic", arch: "amd64", family: "unix"
 
 `results/mvn-test.txt` файлын эцсийн үр дүн: **Tests run: 10, Failures: 0, Errors: 0, Skipped: 0 — BUILD SUCCESS.** `CourseRegistrationServiceTest` нь найман тестийн аргатай; A8-ийн гурван параметр тус бүр тест болж тоологдоно.
 
+### Цэвэр clone шалгалт
+
+Төслийг тусдаа хавтаст clone хийгээд `mvn test` ажиллуулахад `Tests run: 10, Failures: 0, Errors: 0, Skipped: 0` болон `BUILD SUCCESS` гарсан. Clone-д `src/test/` болон шаардлагатай дөрвөн `results/` лог байна; `.idea/` Git-д орохгүй, `target/` build-ийн үед үүссэн ч `.gitignore`-д байна.
+
 A8-ийн мөр бүр зөвхөн тухайн сценарид хэрэгтэй stub-үүдийг тохируулдаг тул бусад мөрийн unused stub үүсэхгүй. Иймээс strict stubbing алдаа гарахгүй бөгөөд `lenient()` хэрэглэх шаардлагагүй.
 
 ## Хэсэг B — Мини мутацийн үр дүн
